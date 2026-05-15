@@ -1,11 +1,11 @@
 :root {
-  --bg: #f8f9fa;
+  --bg: #e8e3e3;
   --surface: #ffffff;
-  --text: #1a1a1a;
+  --primary: #7ed957; /* green */
+  --primary-dark: #58b93f;
+  --text: #111;
   --muted: #555;
-  --primary: #005fcc;
-  --primary-hover: #0047a3;
-  --border: #dcdcdc;
+  --border: #ccc;
   --focus: #ffbf47;
 }
 
@@ -19,7 +19,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
 }
 
 /* Skip link */
@@ -32,128 +31,139 @@ body {
   top: 1rem;
   background: var(--focus);
   padding: 0.5rem;
-  z-index: 100;
 }
 
-/* Layout */
+/* Header */
 header {
-  background: var(--surface);
-  border-bottom: 2px solid var(--border);
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
   padding: 1rem;
 }
 
-.nav {
+/* Top nav layout */
+.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  padding: 0;
-}
-
-.nav a {
-  text-decoration: none;
+/* Logo */
+.logo {
   font-weight: bold;
-  color: var(--text);
+  border: 2px solid black;
+  padding: 0.5rem;
 }
 
-.nav a:hover {
-  color: var(--primary);
+/* Green nav section */
+.nav-bar {
+  background: var(--primary);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-/* Focus states */
+.nav-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.nav-button,
+button {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-button:hover,
+button:hover {
+  background: #f0f0f0;
+}
+
+/* Search */
+.search-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+input[type="search"] {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+/* Focus */
 a:focus,
 button:focus,
 input:focus {
   outline: 3px solid var(--focus);
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
-/* Main */
-main {
-  padding: 2rem 0;
+/* Main layout */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
 }
 
-/* Sections */
-section {
-  margin-bottom: 2rem;
+/* Titles */
+h2 {
+  font-size: 2rem;
 }
 
 /* Cards */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
 .card {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
   padding: 1rem;
-  transition: transform 0.2s ease;
+  border-radius: 8px;
+  border: 1px solid var(--border);
 }
 
-.card:hover {
-  transform: translateY(-3px);
+.card img {
+  width: 100%;
+  border-radius: 6px;
 }
 
 .card h3 {
-  margin-top: 0;
+  margin: 0.5rem 0;
 }
 
-.card button {
-  margin-top: 1rem;
+/* Alphabet filter */
+.alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-/* Buttons */
-button {
-  background: var(--primary);
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  cursor: pointer;
-  border-radius: 4px;
+.letter {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: white;
 }
 
-button:hover {
-  background: var(--primary-hover);
-}
-
-/* Forms */
-form {
-  background: var(--surface);
-  padding: 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  max-width: 500px;
-}
-
-label {
-  display: block;
-  margin-top: 1rem;
-}
-
-input {
+/* Recipe page */
+.hero-img {
   width: 100%;
-  padding: 0.6rem;
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 1rem;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
+  padding: 2rem;
+  background: #ddd;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 0.9rem;
 }
+``
