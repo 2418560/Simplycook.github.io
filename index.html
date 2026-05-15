@@ -2,51 +2,66 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>SimplyCook - Home</title>
-styles.css
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SimplyCook</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-#mainSkip to main content</a>
+<a href="#main" class="skip-link">Skip to main content</a>
 
-<header role="banner">
-  <h1>SimplyCook</h1>
-  <nav aria-label="Main navigation">
-    <ul>
-      <li>index.htmlHome</a></li>
-      <li>ingredient-guide.htmlIngredient Guide</a></li>
-      <li>search.htmlSearch</a></li>
-      <li>login.htmlLogin</a></li>
-      <li>settings.html</li>
-    </ul>
-  </nav>
+<header>
+  <div class="container nav">
+    <h1>SimplyCook</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ingredient-guide.html">Ingredients</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main id="main">
+<main id="main" class="container">
+
   <section>
     <h2>Featured Recipes</h2>
+
     <div class="card-grid">
-      
+
       <article class="card">
-        <h3>Recipe Name</h3>
-        <p>Cook time: 30 mins</p>
+        <h3>Chicken Stir Fry</h3>
+        <p>Quick and easy meal</p>
         <button>View recipe</button>
       </article>
 
       <article class="card">
-        <h3>Recipe Name</h3>
-        <p>Cook time: 20 mins</p>
+        <h3>Vegetable Pasta</h3>
+        <p>Healthy and filling</p>
+        <button>View recipe</button>
+      </article>
+
+      <article class="card">
+        <h3>Beef Curry</h3>
+        <p>Rich and flavourful</p>
         <button>View recipe</button>
       </article>
 
     </div>
+
   </section>
+
 </main>
 
-<footer role="contentinfo">
-  <p>&copy; SimplyCook</p>
+<footer>
+  <p>© SimplyCook | Accessible cooking for everyone</p>
 </footer>
 
 </body>
 </html>
+``
