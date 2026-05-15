@@ -1,67 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SimplyCook</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-<a href="#main" class="skip-link">Skip to main content</a>
-
 <header>
-  <div class="container nav">
-    <h1>SimplyCook</h1>
+  <div class="top-bar">
+    <div class="logo">SimplyCook</div>
 
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ingredient-guide.html">Ingredients</a></li>
-        <li><a href="search.html">Search</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="settings.html">Settings</a></li>
-      </ul>
+    <nav aria-label="User menu">
+      <div class="nav-group">
+        <button>Login</button>
+        <button>Register</button>
+        <button>Settings</button>
+        <button>Log out</button>
+      </div>
     </nav>
+  </div>
+
+  <div class="nav-bar">
+    <nav aria-label="Primary navigation">
+      <div class="nav-group">
+        <a href="index.html" class="nav-button">HomePage</a>
+        <a href="ingredient-guide.html" class="nav-button">How to Prepare Ingredients</a>
+        <a href="#" class="nav-button">About Us</a>
+      </div>
+    </nav>
+
+    <div class="search-area">
+      <label for="search" class="visually-hidden">Search</label>
+      <input id="search" type="search" placeholder="Search...">
+      <button>Search</button>
+    </div>
   </div>
 </header>
 
-<main id="main" class="container">
+<main class="container">
 
-  <section>
-    <h2>Featured Recipes</h2>
+  <h2>Featured Recipes</h2>
 
-    <div class="card-grid">
+  <div class="card-grid">
 
-      <article class="card">
-        <h3>Chicken Stir Fry</h3>
-        <p>Quick and easy meal</p>
-        <button>View recipe</button>
-      </article>
+    <article class="card">
+      <img src="https://picsum.photos/300/200" alt="Lasagne">
+      <h3>Lasagne</h3>
+      <p>Cook time: 30 minutes</p>
+    </article>
 
-      <article class="card">
-        <h3>Vegetable Pasta</h3>
-        <p>Healthy and filling</p>
-        <button>View recipe</button>
-      </article>
+    <article class="card">
+      <img src="https://picsum.photos/301/200" alt="Pork belly ramen">
+      <h3>Pork belly ramen</h3>
+      <p>Cook time: 40 minutes</p>
+    </article>
 
-      <article class="card">
-        <h3>Beef Curry</h3>
-        <p>Rich and flavourful</p>
-        <button>View recipe</button>
-      </article>
+    <article class="card">
+      <img src="https://picsum.photos/302/200" alt="Spaghetti">
+      <h3>Spaghetti Bolognese</h3>
+      <p>Cook time: 30 minutes</p>
+    </article>
 
-    </div>
+    <article class="card">
+      <img src="https://picsum.photos/303/200" alt="Chicken meal">
+      <h3>Soy chicken</h3>
+      <p>Cook time: 25 minutes</p>
+    </article>
 
-  </section>
+  </div>
 
 </main>
 
 <footer>
-  <p>© SimplyCook | Accessible cooking for everyone</p>
+  <div><strong>SimplyCook</strong></div>
+  <div>Explore</div>
+  <div>Company</div>
+  <div>Connect</div>
 </footer>
-
-</body>
-</html>
-``
