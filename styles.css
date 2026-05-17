@@ -241,9 +241,4 @@ footer {
   grid-template-columns: repeat(4, 1fr);
 }
 
-
-.nav-wrapper {
-  background: red !important;
-  height: 10
-
 ``
