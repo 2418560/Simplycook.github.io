@@ -67,6 +67,75 @@ header {
   list-style: none;
   padding: 0;
 }
+/* =========================
+   RECIPE PAGE STYLING
+========================= */
+
+/* Hero image */
+.hero {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+/* Section containers */
+.recipe-section {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+/* Ingredients layout */
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Ingredient groups */
+.ingredient-group {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.ingredient-group h3 {
+  margin-top: 0;
+}
+
+/* Ingredient lists */
+.ingredient-group ul {
+  padding-left: 1.2rem;
+}
+
+/* Instructions */
+.instructions {
+  background: #dcdcdc;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.instructions ol {
+  padding-left: 1.5rem;
+}
+
+/* Headings */
+.recipe-title {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+/* Responsive (tablet support) */
+@media (max-width: 900px) {
+  .ingredients-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Nav buttons */
 .nav-group a {
