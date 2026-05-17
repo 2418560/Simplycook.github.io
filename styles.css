@@ -68,6 +68,22 @@ header {
   list-style: none;
   padding: 0;
 }
+
+
+.nav-button {
+  background-color: #d9d9d9;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #999;
+  text-decoration: none;   /* removes underline */
+  color: black;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: #ccc;
+}
+
 /* =========================
    RECIPE PAGE STYLING
 ========================= */
